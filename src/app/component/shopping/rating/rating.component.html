@@ -1,0 +1,9 @@
+<p>rating works!</p>
+<div class="rating">
+    <i 
+      *ngFor="let star of stars" 
+      class="fa"
+      [class.fa-star]="star <= rating" 
+      [class.fa-star-o]="star > rating">
+    </i>
+  </div>

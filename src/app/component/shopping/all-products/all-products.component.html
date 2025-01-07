@@ -1,0 +1,14 @@
+<h1>All Products</h1>
+<div class="container">
+    <div class="card" *ngFor="let prod of products">
+        <div class="card-body card-details">
+            <div class="card-name">{{prod.name}}</div>
+            <div class="card-price">{{prod.price}}</div>
+            <div class="card-rating"><app-rating [rating]="prod.rating"></app-rating></div>
+            <div class="card-image">
+                <img [src]="prod.image" alt="{{prod.name}}" style="max-width: 100px; height: auto;">
+            </div>
+            <button (click)="view(prod)" class="btn btn-info">View</button>
+        </div>
+    </div>
+</div>

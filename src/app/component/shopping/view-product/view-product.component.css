@@ -1,0 +1,28 @@
+.card-image{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    
+}
+
+.card-details{
+    flex: 1;
+    padding-left: 20px;
+    
+}
+.card-name{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.card-price{
+    font-size: 1.2rem;
+    color: green;
+}
+.card-rating{
+    margin-top: 10px;
+}
+.view-btn{
+    margin-top: 20px;
+}
